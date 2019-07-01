@@ -1,0 +1,40 @@
+{
+    "name": "electron-quick-start",
+    "version": "1.0.0",
+    "description": "A minimal Electron application",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron . ",
+        "package": "electron-packager . app --win=x32 --out presenter --arch=x64  --overwrite "
+    },
+    "build": {
+        "appId": "simpleMusicPlayer",
+        "mac": {
+            "target": ["dmg", "zip"]
+        },
+        "win": {
+            "target": ["nsis", "zip"],
+            "icon": "build/icon.ico"
+        }
+    },
+    "repository": "https://github.com/electron/electron-quick-start",
+    "keywords": [
+        "Electron",
+        "quick",
+        "start",
+        "tutorial",
+        "demo"
+    ],
+    "author": "GitHub",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "electron": "^5.0.5",
+        "nodemon": "^1.18.10",
+        "electron-packager": "^14.0.0"
+    },
+    "dependencies": {
+        "bootstrap": "^4.3.1",
+        "electron-store": "^3.2.0",
+        "uuid": "^3.3.2"
+    }
+}
